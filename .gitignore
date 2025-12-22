@@ -1,0 +1,40 @@
+# Testing scripts and evaluation files
+*.py
+
+# Datasets
+dataset/
+backend/demo/src/main/resources/dataset/
+
+# Sensitive files
+.env
+
+# Test directories
+**/src/test/
+
+# Node modules
+node_modules/
+
+# Python virtual environment
+venv/
+
+# Evaluation results and assets
+*results.json
+*.png
+*.pdf
+*.tex
+
+# Other files
+test-*
+query
+research_topics_neuro_rag.txt
+responses_to_limitations.md
+evaluation_test_plan.md
+neuro_rag_abstract_ieee.tex
+confusion_matrix.png
+bayesian_adaptive_evaluation_graphs.png
+evaluation_graphs.png
+ieee_conference_analysis.png
+normalized_confusion_matrix.png
+precision_recall_point.png
+sample_resume.pdf
+test.pdf
