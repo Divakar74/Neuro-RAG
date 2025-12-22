@@ -20,14 +20,37 @@ Neuro-RAG is an innovative web application that leverages advanced AI technologi
 
 ### Quick Start
 
-1. **Backend Setup**:
+1. **Prerequisites**:
+   - Java 11+
+   - Node.js 16+
+   - MySQL 8.0+
+   - Maven 3.6+
+
+2. **Environment Setup**:
+   Create environment variables for sensitive data:
+   ```bash
+   # Database credentials
+   export DB_USERNAME=your_mysql_username
+   export DB_PASSWORD=your_mysql_password
+
+   # API Keys
+   export OPENAI_API_KEY=your_openai_api_key
+   export HUGGINGFACE_API_KEY=your_huggingface_api_key
+   export SECURITY_JWT_SECRET=your_jwt_secret_key
+   ```
+
+3. **Database Setup**:
+   - Create a MySQL database named `skillmap`
+   - The application will auto-create tables on startup
+
+4. **Backend Setup**:
    ```bash
    cd backend/demo
-   # Configure database and API keys
+   mvn clean install
    mvn spring-boot:run
    ```
 
-2. **Frontend Setup**:
+5. **Frontend Setup**:
    ```bash
    cd neurorag
    npm install
