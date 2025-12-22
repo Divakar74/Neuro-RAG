@@ -38,3 +38,10 @@ normalized_confusion_matrix.png
 precision_recall_point.png
 sample_resume.pdf
 test.pdf
+Resume.csv/
+
+# Documentation and planning files
+TODO.md
+IMPLEMENTATION_SUMMARY.md
+visualizations/
+plans/
