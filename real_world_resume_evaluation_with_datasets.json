@@ -1,0 +1,849 @@
+{
+  "dataset_info": {
+    "total_resumes": 100,
+    "huggingface_count": 50,
+    "local_count": 50,
+    "categories": {
+      "Testing": 5,
+      "Java Developer": 4,
+      "Web Designing": 3,
+      "DevOps Engineer": 3,
+      "Arts": 3,
+      "HR": 3,
+      "Data Science": 3,
+      "Hadoop": 2,
+      "Operations Manager": 2,
+      "Sales": 2,
+      "PMO": 2,
+      "ETL Developer": 2,
+      "Business Analyst": 2,
+      "Automation Testing": 2,
+      "Mechanical Engineer": 2,
+      "Health and fitness": 2,
+      "Civil Engineer": 1,
+      "DotNet Developer": 1,
+      "Python Developer": 1,
+      "Advocate": 1,
+      "Network Security Engineer": 1,
+      "Electrical Engineering": 1,
+      "Database": 1,
+      "SAP Developer": 1
+    },
+    "sample_size": 100
+  },
+  "parsing_performance": {
+    "success_rate": 1.0,
+    "successful_parses": 100,
+    "total_attempts": 100,
+    "average_extracted_skills": 0.0,
+    "average_ground_truth_skills": 5.04
+  },
+  "skill_extraction_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 0.0
+  },
+  "individual_results": [
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 12,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 4,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 16,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 13,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 10,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 11,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 10,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 10,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 12,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "huggingface",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "unknown"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "Java Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 9,
+      "category": "Java Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "Java Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "Hadoop"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Health and fitness"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "Network Security Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "Mechanical Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "Automation Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "Advocate"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Health and fitness"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "Hadoop"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "HR"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Mechanical Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "Python Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "Civil Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 15,
+      "category": "Data Science"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "Business Analyst"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "ETL Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "DotNet Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "PMO"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Arts"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "ETL Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 8,
+      "category": "Data Science"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Sales"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Sales"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "Automation Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "HR"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 4,
+      "category": "Operations Manager"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "Arts"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "DevOps Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 7,
+      "category": "Web Designing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "Electrical Engineering"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "Database"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "HR"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Web Designing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "DevOps Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Operations Manager"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 6,
+      "category": "Data Science"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 10,
+      "category": "DevOps Engineer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "PMO"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 2,
+      "category": "Web Designing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 4,
+      "category": "Testing"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 1,
+      "category": "SAP Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 3,
+      "category": "Arts"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 5,
+      "category": "Java Developer"
+    },
+    {
+      "resume_id": "unknown",
+      "source": "local",
+      "success": true,
+      "extracted_skills_count": 0,
+      "ground_truth_skills_count": 4,
+      "category": "Business Analyst"
+    }
+  ]
+}
