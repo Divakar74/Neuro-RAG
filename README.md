@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Neuro-RAG: AI-Powered Skill Assessment and Learning Roadmap Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Neuro-RAG is an innovative web application that leverages advanced AI technologies, including Retrieval-Augmented Generation (RAG) and cognitive analysis, to provide personalized skill assessments and learning roadmaps for users. The platform integrates resume parsing, adaptive questioning, and AI-driven insights to help users identify skill gaps and create tailored development plans.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Resume Analysis**: Upload and parse resumes using AI-powered NLP models (Gemini, Hugging Face NER)
+- **Adaptive Skill Assessment**: Dynamic question generation based on user responses and cognitive analysis
+- **AI-Powered Insights**: Cognitive bias detection, skill gap analysis, and personalized recommendations
+- **Learning Roadmaps**: Automated generation of structured learning paths with milestones and resources
+- **User Dashboard**: Comprehensive progress tracking and performance analytics
+- **Secure Authentication**: JWT-based user authentication and session management
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- React.js with modern hooks and context API
+- Tailwind CSS for responsive styling
+- Axios for API communication
+- React Router for navigation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- Spring Boot (Java) with Spring Security
+- MySQL database with JPA/Hibernate
+- JWT authentication
+- RESTful API design
 
-### `npm test`
+### AI/ML Integration
+- OpenAI GPT models for question generation and analysis
+- Hugging Face transformers for NER and NLP tasks
+- Custom cognitive analysis algorithms
+- RAG implementation for enhanced AI responses
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+- Node.js (v16 or higher)
+- Java 11 or higher
+- MySQL 8.0 or higher
+- Maven 3.6+
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navigate to the backend directory:
+   ```bash
+   cd backend/demo
+   ```
 
-### `npm run eject`
+2. Configure database:
+   - Create a MySQL database named `skillmap`
+   - Update `src/main/resources/application.properties` with your database credentials:
+     ```properties
+     spring.datasource.username=your_db_username
+     spring.datasource.password=your_db_password
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Set environment variables for API keys:
+   ```bash
+   export OPENAI_API_KEY=your_openai_api_key
+   export HUGGINGFACE_API_KEY=your_huggingface_api_key
+   export SECURITY_JWT_SECRET=your_jwt_secret
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Build and run:
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Navigate to the frontend directory:
+   ```bash
+   cd neurorag
+   ```
 
-## Learn More
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application will be available at `http://localhost:3000`
 
-### Code Splitting
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `POST /api/auth/login` - User authentication
+- `POST /api/auth/register` - User registration
+- `POST /api/resume/upload` - Resume upload and parsing
+- `GET /api/assessment/start` - Start skill assessment
+- `POST /api/assessment/submit` - Submit assessment responses
+- `GET /api/roadmap/{userId}` - Get personalized learning roadmap
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+Neuro-RAG/
+├── backend/                 # Spring Boot backend
+│   └── demo/
+│       ├── src/main/java/com/skillmap/
+│       │   ├── controller/  # REST controllers
+│       │   ├── service/     # Business logic
+│       │   ├── model/       # Entity models
+│       │   └── config/      # Configuration classes
+│       └── src/main/resources/
+│           └── application.properties
+├── neurorag/                # React frontend
+│   ├── src/
+│   │   ├── components/      # React components
+│   │   ├── services/        # API services
+│   │   └── contexts/        # React contexts
+│   ├── public/              # Static assets
+│   └── package.json
+└── README.md
+```
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Built with Spring Boot and React
+- AI capabilities powered by OpenAI and Hugging Face
+- UI components styled with Tailwind CSS
