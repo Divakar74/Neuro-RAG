@@ -95,6 +95,8 @@ const EnhancedDashboard = ({ userId, sessionId, skillDependencies, loading = fal
           }
 
           // Load user skill gaps for personalized recommendations
+          // TODO: Implement skill gaps endpoint
+          /*
           try {
             const skillGapsRes = await getUserSkillGaps(userId);
             setUserSkillGaps(skillGapsRes.data || []);
@@ -102,6 +104,8 @@ const EnhancedDashboard = ({ userId, sessionId, skillDependencies, loading = fal
             console.log('No skill gaps data available for user');
             setUserSkillGaps([]);
           }
+          */
+          setUserSkillGaps([]);
         }
 
         // Load assessment progress if sessionId exists

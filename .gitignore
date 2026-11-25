@@ -16,6 +16,11 @@ node_modules/
 
 # Python virtual environment
 venv/
+__pycache__/
+*.pyc
+
+# Local H2 dev database
+backend/demo/data/
 
 # Evaluation results and assets
 *results.json

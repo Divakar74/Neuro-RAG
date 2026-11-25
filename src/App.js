@@ -149,6 +149,7 @@ function App() {
   if (currentView === 'dashboard') {
     return (
       <EnhancedDashboard
+        userId={user?.id}
         sessionId={assessmentSession?.sessionToken}
         onViewRoadmap={handleViewRoadmap}
         onBackToLanding={handleBackToLanding}

@@ -9,7 +9,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
@@ -92,27 +94,19 @@ public class AuthController {
     }
 
     @GetMapping("/validate")
-    public ResponseEntity<Map<String, Object>> validateToken(@RequestHeader("Authorization") String authHeader) {
+    public ResponseEntity<Map<String, Object>> validateToken(Authentication authentication) {
         try {
-            String token = authHeader.substring(7); // Remove "Bearer " prefix
-            String username = jwtTokenService.extractUsername(token);
-
-            if (username != null && jwtTokenService.validateToken(token)) {
-                User user = userService.findByEmail(username);
-                Map<String, Object> response = new HashMap<>();
-                response.put("success", true);
-                response.put("user", Map.of(
-                    "id", user.getId(),
-                    "email", user.getEmail(),
-                    "name", user.getEmail().split("@")[0]
-                ));
-                return ResponseEntity.ok(response);
-            } else {
-                Map<String, Object> errorResponse = new HashMap<>();
-                errorResponse.put("success", false);
-                errorResponse.put("message", "Invalid or expired token");
-                return ResponseEntity.status(401).body(errorResponse);
-            }
+            UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+            String email = userDetails.getUsername();
+            User user = userService.findByEmail(email);
+            Map<String, Object> response = new HashMap<>();
+            response.put("success", true);
+            response.put("user", Map.of(
+                "id", user.getId(),
+                "email", user.getEmail(),
+                "name", user.getEmail().split("@")[0]
+            ));
+            return ResponseEntity.ok(response);
         } catch (Exception e) {
             Map<String, Object> errorResponse = new HashMap<>();
             errorResponse.put("success", false);

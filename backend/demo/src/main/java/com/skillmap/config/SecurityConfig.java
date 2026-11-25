@@ -36,6 +36,9 @@ public class SecurityConfig {
                 // Public endpoints
                 .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
                 .requestMatchers("/api/resume/parse").permitAll() // Allow test parsing endpoint
+                .requestMatchers("/api/resume/upload").permitAll() // Allow resume upload (userId validated in controller)
+                .requestMatchers("/api/health/**").permitAll() // Health check endpoints
+                .requestMatchers("/h2-console/**").permitAll() // H2 database console
                 // Protected endpoints - require authentication
                 .requestMatchers("/api/auth/validate", "/api/auth/logout").authenticated()
                 .requestMatchers("/api/assessment/**").authenticated()

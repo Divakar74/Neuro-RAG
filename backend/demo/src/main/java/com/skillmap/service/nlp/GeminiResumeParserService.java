@@ -57,7 +57,7 @@ public class GeminiResumeParserService {
             rawEntitiesMap.put("entities", Map.of(
                 "PERSON", List.of(parsedData.get("name")),
                 "ORG", extractOrganizations((List<Map<String, Object>>) parsedData.get("experiences")),
-                "SKILL", parsedData.get("skills")
+                "SKILL", extractSkillNames((List<Map<String, Object>>) parsedData.get("skills"))
             ));
             resumeData.setRawEntities(objectMapper.writeValueAsString(rawEntitiesMap));
 
@@ -197,7 +197,7 @@ public class GeminiResumeParserService {
             java.nio.file.Files.write(tempFile, contentBytes);
 
             // Build command
-            ProcessBuilder pb = new ProcessBuilder("python", "gemini_resume_pdf.py", tempFile.toString());
+            ProcessBuilder pb = new ProcessBuilder("python", "../../gemini_resume_pdf.py", tempFile.toString());
             pb.environment().put("GEMINI_API_KEY", GEMINI_API_KEY);
             pb.redirectErrorStream(true); // Merge stdout and stderr
 
@@ -340,6 +340,19 @@ public class GeminiResumeParserService {
             }
         }
         return orgs;
+    }
+
+    private List<String> extractSkillNames(List<Map<String, Object>> skills) {
+        List<String> skillNames = new ArrayList<>();
+        if (skills != null) {
+            for (Map<String, Object> skill : skills) {
+                Object skillName = skill.get("skillName");
+                if (skillName != null) {
+                    skillNames.add(skillName.toString());
+                }
+            }
+        }
+        return skillNames;
     }
 
     private ResumeData createFallbackResumeData(byte[] contentBytes, AssessmentSession session) {

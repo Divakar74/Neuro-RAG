@@ -94,6 +94,9 @@ export const UserProvider = ({ children }) => {
       setUser(newUserData);
       localStorage.setItem('user', JSON.stringify(newUserData));
 
+      // After successful registration, automatically login to get token
+      await login({ email: userData.email, password: userData.password });
+
     } catch (error) {
       throw new Error(error.response?.data?.message || 'Registration failed');
     }
